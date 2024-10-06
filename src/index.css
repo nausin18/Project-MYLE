@@ -4,13 +4,33 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: rgba(39, 109, 240, 0.87);
+  background-color: whitesmoke;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-overflow-scrolling: touch;
+  -webkit-backface-visibility: hidden;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-font-feature-settings: 'kern' 1;
+  font-feature-settings: 'kern' 1;
+
+  --color-primary: #f34a4a;
+  --color-secondary: #6eff64;
+  --color-tertiary: #535bf2;
+  --color-quaternary: #f5f5f5;
+  --color-quinary: #f9f9f9;
 }
 
 a {
@@ -28,35 +48,77 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  text-align: center;
+  background-color: #f5f5f5;
+   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect fill="rgba(0,0,0,0.02)" x="0" y="0" width="50" height="50"/><rect fill="rgba(0,0,0,0.04)" x="50" y="0" width="50" height="50"/><rect fill="rgba(0,0,0,0.06)" x="0" y="50" width="50" height="50"/><rect fill="rgba(0,0,0,0.08)" x="50" y="50" width="50" height="50"/></svg>');
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  font-weight: 700;
+  color: #f34a4a;
+  margin: 0.5em 0;
+
 }
 
 button {
-  border-radius: 8px;
+  border-radius: 15px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: white;
   cursor: pointer;
   transition: border-color 0.25s;
+  color: #f34a4a;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  user-select: none;
+  touch-action: manipulation;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  margin: 0.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  margin-inline: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  margin-block: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-inline: 1em;
+  padding-inline-start: 1em;
+  padding-inline-end: 1em;
+  padding-block: 0.5em;
+  padding-block-start: 0.5em;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #d10808;
+  color: #d10808;
+
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+  outline-offset: 2px;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    color: #d5e6f5;
     background-color: #ffffff;
   }
   a:hover {

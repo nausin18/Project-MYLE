@@ -30,7 +30,7 @@ h1 {
 }
 
 button {
-  border-radius: 15px;
+  border-radius: 20px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
@@ -40,15 +40,39 @@ button {
   transition: border-color 0.25s;
   color: #f34a4a;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
   text-align: space-around;
   text-decoration: darkgray;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-evenly;
+  margin: 2em;
+  display: inline-block;
+  
+  
 }
 button:hover {
   border-color: #d10808;
   color: #2963d6;
+}
+
+/* styles.css */
+.round-button {
+  border: 1px solid transparent;
+  padding: 1em 1em;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: white;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: #f34a4a;
+  text-decoration: darkgray;
+  justify-content: space-evenly;
+  margin: 0.5em;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.round-button:hover {
+  border-color: #f086e4;
+  
 }
 
 

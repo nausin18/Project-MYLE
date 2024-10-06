@@ -18,9 +18,10 @@ const HomePage: React.FC = () => {
       <div className="flex-grow flex flex-col items-center justify-center">
         <div className="max-w-7xl mx-auto text-center mb-8">
           <div className="p-4 border-2 border-gray-300 rounded-lg hover:bg-gray-100 transition duration-300">
-            {/* You can add content or images here */}
+            {/*  add content or images here */}
             <p className="text-lg md:text-xl text-gray-700">
-              Check out our amazing offerings!
+            MYLE is an  smart grocery list web , time-saving solution for managing household groceries. It automates inventory tracking by integrating with barcode scanners, smart fridges, or manual input, keeping real-time updates of items in your pantry, fridge, and freezer. it reduces food waste by monitoring expiration dates and suggesting recipes based on items nearing their expiration.It generates shopping lists automatically when items run low, saving users from manually checking their kitchens. 
+
             </p>
           </div>
           <p className="text-lg md:text-xl text-gray-700 mb-8">
@@ -40,12 +41,16 @@ const HomePage: React.FC = () => {
           >
             What stock we have in the fridge
           </button>
+
+
+
           <button
-            className="flex items-center justify-center w-32 h-32 md:w-24 md:h-24 bg-red-600 text-white font-bold rounded-full shadow-lg hover:bg-red-500 transition duration-300"
-            onClick={() => navigate('/page3')}
+              className="flex items-center justify-center w-32 h-32 md:w-32 md:h-32 bg-red-600 text-white font-bold rounded-full shadow-lg hover:bg-red-500 transition duration-300"
+              onClick={() => navigate('/page3')}
           >
-            When the food expires
+              When the food expires
           </button>
+
         </div>
       </div>
       <Footer />

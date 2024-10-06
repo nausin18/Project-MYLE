@@ -1,16 +1,21 @@
-import React from 'react';
-import '../App.css'; // Ensure the correct path to App.css
+import { useNavigate } from 'react-router-dom';
 
 const Page2: React.FC = () => {
-  return <div>Page 2 
-    <div className="bg-red-600 text-white font-bold rounded-full shadow-lg hover:bg-red-500 transition duration-300">
-        ddddddddddddddddddddddddd
-        <div> 
-            <button className="w-16 h-16 bg-red-600 text-white font-bold rounded-full shadow-lg hover:bg-red-500 transition duration-300" onClick={() => window.location.href = '/page3'}>3</button>
-        </div>
+  const navigate = useNavigate();
 
+  return (
+    <div>
+      <div className="bg-green-600 text-white font-bold rounded-full shadow-lg hover:bg-green-500 transition duration-300 p-4 mb-4">
+        In this section, you'll find information about the stock in the fridge.
+      </div>
+      <button
+        className="bg-blue-600 text-white font-bold rounded-full shadow-lg hover:bg-blue-500 transition duration-300 p-4"
+        onClick={() => navigate('/')}
+      >
+        return to homepage
+      </button>
     </div>
-  </div>;
+  );
 };
 
 export default Page2;
